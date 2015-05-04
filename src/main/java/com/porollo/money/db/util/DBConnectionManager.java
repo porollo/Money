@@ -10,10 +10,16 @@ import java.sql.SQLException;
 
 public class DBConnectionManager {
 
+    private final static String JDBC_CLASS = "com.microsoft.jdbc.sqlserver.SQLServerDriver";
+
+    private static String dbURL;
+    private static String user;
+    private static String pwd;
+
     private Connection connection;
 
     public DBConnectionManager(String dbURL, String user, String pwd) throws ClassNotFoundException, SQLException{
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName(JDBC_CLASS);
         this.connection = DriverManager.getConnection(dbURL, user, pwd);
     }
 

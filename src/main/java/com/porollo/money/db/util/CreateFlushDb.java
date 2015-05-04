@@ -6,7 +6,11 @@ package com.porollo.money.db.util;
 
 public class CreateFlushDb {
 
-    public void createDb () {
+    public void checkDb() {
+
+    }
+
+    public void createDb() {
 
     }
 
