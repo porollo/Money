@@ -22,7 +22,7 @@ public class AppController {
         ModelAndView model = new ModelAndView();
         model.addObject(title, pName);
         model.addObject("message", "Welcome Page !");
-        model.setViewName("money");
+        model.setViewName("index"); //Change this !(money)
         return model;
     }
 

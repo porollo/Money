@@ -22,7 +22,7 @@ public class WebConfig {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
         viewResolver.setPrefix("/views/"); // Attention !
-        viewResolver.setSuffix(".jsp");
+        viewResolver.setSuffix(".jsp"); //.jsp
         return viewResolver;
     }
 }
